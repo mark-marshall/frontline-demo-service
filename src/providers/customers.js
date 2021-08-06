@@ -1,7 +1,5 @@
 const axios = require('axios');
 
-const customersToWorkersMap = { '+447557955350': 'mmarshall@twilio.com' };
-
 const findWorkerForCustomer = async (customerNumber) => {
   const customersToWorkersMapRes = await axios.get(
     'https://ukise-frontline-1182.twil.io/customers-workers-map.json'
